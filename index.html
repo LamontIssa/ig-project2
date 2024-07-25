@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+  </head>
+
+  <body>
+    
+  <h1>A NYC COVID SNAPSHOT</h1>
+  <h3>Issa Lamont</h3>
+  <p>This webpage provides visualizations and analysis of COVID data across NYC as of April 2024. 
+  </p>
+
+  <h2>COVID's effects on the Body</h2>
+  <p>The CDC reports that 1 in 5 adults ages 18+ and 1 in 4 ages 65+ experience lasting conditions likely 
+    caused by a COVID infection, these lasting conditions are classified under the term “long COVID.” These include but are not limited to: neurological impairment; kidney failure; cardiovascular conditions; respiratory conditions; 
+    blood clots and vascular issues; and musculoskeletal conditions. The <a target="_blank" href="https://www.autoimmuneregistry.org/long-covid-announcement">Autoimmune Registry</a> has classified Long COVID as an autoimmune and autoinflammatory disease.
+    For more information regarding the health impacts of COVID check out this <a target="_blank" href="https://pandemicpatients.org/home/covid-19-resources/lc-pcc/">resource by Pandemic Patients.</a> 
+    
+</p>
+<h2>Total COVID Counts since 2020</h2>
+<p>Below are two maps showing total case counts and death counts by ZIP code across NYC from 2020 to the end of March 2024. </p>
+  <div class="graphic">
+   <iframe title="Datawrapper visual" aria-label="Map" 
+    id="datawrapper-map-SmyQx" src="https://datawrapper.dwcdn.net/SmyQx/1/" 
+    scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" 
+    height="339">
+    </iframe>
+    <script type="text/ javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script>
+  </div>
+
+  
+
+  <p>According to an <a target="_blank" href="https://gothamist.com/news/new-york-city-quietly-closed-half-covid-testing-sites-omicron-rebound">investigation by The Gothamist,</a> in the two months between February and April 2022 NYC Hospital + testing sites were reduced from 270 to 144 locations. These sites provided free testing to the public.
+    This reduction in testing sites was done over a year prior to the official end of the federal public health emergency on May 11, 2023. As of April 2024, there are only 11 Hosptital + testing locations,
+    all of which require an appointment prior to testing.
+    Despite a lack of up to date data we still see through the map above that COVID infections effected certain areas of NYC. This pattern is also represented in deaths caused by COVID, as shown in the map below.</p>
+
+  <div id="map-padding" class="graphic">
+    <iframe title="Test Map" aria-label="Map" 
+    id="datawrapper-map-MaQXk" src="https://datawrapper.dwcdn.net/MaQXk/1/" 
+    scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" 
+    height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+    </script>
+  </div>
+
+  <h2>Disproportionate Hospitalization by space</h2>
+  <p id="paragraph-text">Substantial COVID data is no longer being collected due to a lack of funding and testing sites, one way 
+    we can attempt to understand how COVID is still impacting New Yorkers is through hospitalization data. The map below shows March 2024 COVID hospitalizations by ZIP code. We can see that many of the same areas represented in the maps 
+    above are still experiencing a disproportionate amount of hospitalizations.</p>
+
+    <div class="graphic">
+        <iframe title="Test Map" aria-label="Map" 
+        id="datawrapper-map-uqze2" src="https://datawrapper.dwcdn.net/uqze2/1/"
+        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" 
+        height="445"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+        </script>
+    </div>
+
+    <p>A COVID infection can cause such a large amount of lasting conditions that it's likely the amount of people with experiencing long and post COVID conditions is much higher. 
+      Additionally, since health care professionals are no longer required to wear masks in NYC these hospitals can become incubators for further spread of COVID. 
+      Without active mask mandates in hospital settings those still contagious with COVID can further spread the virus and those without the virus are more susceptible to contracting it, 
+      this lack of precautions makes hosptials increasingly dangerous for all people and especially those with weakened immune systems.</p>
+
+
+  <h2>Disproportionate Hospitalization by group</h2>
+    <p id="paragraph-text">Below is a chart showing COVID hospitalizations in the past 90 days (as of April 2024) in NYC by race/ethnicity. Since this data is pulled from hospitals it is using their 
+        categories of race and ethnicity which work to collapse the two distinct categories into one another. This doesn't completely void the findings but highly 
+        limits what can be understood about who is accessing hospital care for COVID, it additionally forces any analysis to work within their reductive 
+        racial/ethnicity parameters. Despite this it's apparent that Black African Americans are hospitalized for COVID more so than every other 
+        racial/ethnic group within the past 90 days. Hispanic Latinos also experienced relatively high hospitalization rates in the last two weeks of 
+        January. At some points in this data, Black African Americans are hospitalized almost twice as often as white people. This mirrors <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8513546/">findings</a> from earlier 
+        in the pandemic that Black, Latinx, and American Indian people were hospitalized and died at a higher rate than white people. </p>
+  
+      <div class="graphic">
+          <iframe title="Race Hospitalization Chart" aria-label="Chart" 
+          id="datawrapper-chart-Ekjs1" src="https://datawrapper.dwcdn.net/Ekjs1/1/"
+          scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" 
+          height="445"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+          </script>
+      </div>
+
+
+      <p id="paragraph-text">The graph below shows hospitalizations in the past 90 days by age group. The findings here also mirror <a target="_blank" href="https://www.cdc.gov/mmwr/volumes/72/wr/mm7240a3.htm">research</a> showing that older
+        people, particularly those who are 75+, experience worse health outcomes when contracting COVID. However this understanding should not be leveraged to say 
+        those who are younger do not also experience medium and long term complications from COVID.</p>
+      <div class="graphic">
+        <iframe title="Age Hospitalization Chart" aria-label="Chart" 
+        id="datawrapper-chart-NgVHB" src="https://datawrapper.dwcdn.net/NgVHB/1/"
+        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" 
+        height="445"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+        </script>
+    </div>
+
+    <p>The information for hospitalizations of COVID shown above begins to express some of the ways this virus has further entrenched existing systems in the U.S., 
+      particularly systemic racism. What they can’t express is all the folks who are unable to access hospital care because of class and documentation status. They 
+      also fail to express to all of the people living with post and long-COVID conditions who are either not hospitalized or hospitalized but no longer COVID positive. </p>
+
+
+<h2>Where Now?</h2>
+
+<p>COVID has disabled and killed so many, and continues to do so. Those in power didn’t create the virus but they have normalized and sustained it. This is the 
+normalization of preventable death and disease to continue “business as usual”. There is now a lack of support from legitimized systems like the CDC and other existing 
+governmental organizations to supply us with legitimate information and protections for  COVID. Below are a variety of resources for further understanding how to mitigate 
+transmission as well as some collectives committed to organizing around COVID. 
+</p>
+
+<ul>
+
+<li><a target="_blank" href="https://newlevant.com/COVIDzine">2024 COVID primer zine by Hazel Newlevant</a></li>
+<li><a target="_blank" href="https://clarion.unity-struggle-unity.org/let-them-eat-plague/">Let Them Eat Plague</a></li>
+<li><a target="_blank" href="https://covid.tips/">How to discuss COVID with loved ones</a></li>
+<li><a target="_blank" href="https://maskbloc.org/">Directory of all active mask blocs</a></li>
+<li><a target="_blank" href="https://www.airnyc.club/">NYC purifier library</a></li>
+<li><a target="_blank" href="https://longcovidjustice.org/">Long COVID Justice collective</a></li>
+
+</ul>
+
+  </body>
+
+  <footer>
+Data Sourced from <a target="_blank" href="https://github.com/nychealth/coronavirus-data/tree/master">NYC DOH</a><br/>
+      <!-- Attribute you data here -->
+  </footer>
+</html>
